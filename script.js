@@ -49,7 +49,7 @@ let backgroundColors = ["rgb(161, 194, 205)", "#003147"];
 let index = 0; // Başlangıç renk indeksi
 
 function changeBackgroundAndBoxColor() {
-    // Arka plan rengini değiştir
+
     document.body.style.transition = "background-color 2s ease"; 
     document.body.style.backgroundColor = backgroundColors[index]; 
 
