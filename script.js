@@ -10,7 +10,6 @@ function updateSkillProgress(skill, percent) {
    
     const animationSpeed = 10; 
 
-    // hedef genişliğe ulaşana kadar animasyonla genişliği artır
     function animate() {
         if (currentWidth < targetWidth) {
             currentWidth++;
@@ -23,12 +22,16 @@ function updateSkillProgress(skill, percent) {
 }
 
 // beceri puanları
-updateSkillProgress('html', 80); // html becerisi %80 örnek olarak
-updateSkillProgress('css', 60);
-updateSkillProgress('csharp', 85);
-updateSkillProgress('c', 75);
-updateSkillProgress('python', 90);
-updateSkillProgress('mysql', 85);
+updateSkillProgress('mysql', 100); 
+updateSkillProgress('python', 90); 
+updateSkillProgress('dotnetCore', 90); 
+updateSkillProgress('csharp', 90); 
+updateSkillProgress('html', 80); 
+updateSkillProgress('javascript', 80); 
+updateSkillProgress('nodejs', 75); 
+updateSkillProgress('arduino', 75);
+updateSkillProgress('c', 65); 
+updateSkillProgress('java', 55); 
 
 
 document.querySelectorAll('.container .left_side, .container .right_side').forEach(element => {
@@ -46,10 +49,9 @@ document.querySelectorAll('.container .left_side, .container .right_side').forEa
 
 // arkaplan rengi değiştirme
 let backgroundColors = ["rgb(161, 194, 205)", "#003147"]; 
-let index = 0; // Başlangıç renk indeksi
+let index = 0; 
 
 function changeBackgroundAndBoxColor() {
-
     document.body.style.transition = "background-color 2s ease"; 
     document.body.style.backgroundColor = backgroundColors[index]; 
 
